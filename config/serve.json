@@ -1,0 +1,30 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/core-build/serve.schema.json",
+  "port": 4321,
+  "https": true,
+  "serveConfigurations": {
+    "default": {
+      "pageUrl": "https://tatvasoft337.sharepoint.com/sites/SharepointSite/SitePages/Home.aspx",
+      "customActions": {
+        "a39478d6-f4ae-4a6e-9c09-d5c95158b87f": {
+          "location": "ClientSideExtension.ApplicationCustomizer",
+          "properties": {
+            "Top": "Top area of the page",
+            "Bottom": "Bottom area of the page"
+          }
+        }
+      }
+    },
+    "helloWorld": {
+      "pageUrl": "https://contoso.sharepoint.com/sites/mySite/SitePages/myPage.aspx",
+      "customActions": {
+        "a39478d6-f4ae-4a6e-9c09-d5c95158b87f": {
+          "location": "ClientSideExtension.ApplicationCustomizer",
+          "properties": {
+            "testMessage": "Test message"
+          }
+        }
+      }
+    }
+  }
+}
